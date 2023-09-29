@@ -1,3 +1,2 @@
-echo '#!/bin/bash' > 10-mirror_permissions
-echo 'chmod --reference=olleh hello' >> 10-mirror_permissions
-
+#!/bin/bash
+chmod --reference=olleh hello

@@ -1,3 +1,2 @@
-echo '#!/bin/bash' > 3-new_owner
-echo 'chown betty hello' >> 3-new_owner
-
+#!/bin/bash
+chown betty hello

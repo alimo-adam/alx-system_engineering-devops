@@ -1,3 +1,2 @@
-echo '#!/bin/bash' > 2-groups
-echo 'groups' >> 2-groups
-
+#!/bin/bash
+groups

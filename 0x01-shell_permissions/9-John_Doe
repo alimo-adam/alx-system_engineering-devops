@@ -1,3 +1,2 @@
-echo '#!/bin/bash' > 9-John_Doe
-echo 'chmod 751 hello' >> 9-John_Doe
-
+#!/bin/bash
+chmod 751 hello

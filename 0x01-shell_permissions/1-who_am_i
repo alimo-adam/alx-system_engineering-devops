@@ -1,3 +1,2 @@
-echo '#!/bin/bash' > 1-who_am_i
-echo 'whoami' >> 1-who_am_i
-
+#!/bin/bash
+whoami
