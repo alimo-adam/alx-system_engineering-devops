@@ -1,0 +1,3 @@
+echo '#!/bin/bash' > 6-multiple_permissions
+echo 'chmod ug+x,o+r hello' >> 6-multiple_permissions
+

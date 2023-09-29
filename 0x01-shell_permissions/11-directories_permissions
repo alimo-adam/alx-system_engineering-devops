@@ -1,0 +1,3 @@
+echo '#!/bin/bash' > 11-directories_permissions
+echo 'chmod ugo+X *' >> 11-directories_permissions
+
