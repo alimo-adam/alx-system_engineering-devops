@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -type d -empty -printf "%P\n" -o -type f -empty -printf "%P\n" | sed '/^\s*$/d'
-
+find . \( -type d -o -type f \) -empty -exec sh -c 'echo "${1##*/}"' _ {} \;
