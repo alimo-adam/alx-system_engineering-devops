@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'BEGIN{printf "%s\n", strtonum("0x"gensub(/./, sprintf("%x", index("ewatr", "&")-1), "g", ENVIRON["WATER"])) + strtonum("0x"gensub(/./, sprintf("%x", index("tir.", "&")-1), "g", ENVIRON["STIR"]))}'
+echo "ibase=16;$(echo $WATER | tr 'ewat' '1234')+$(echo $STIR | tr 'tir.' '3210')" | bc | xargs printf "%x" | tr '0-9a-f' 'bestcholhij'
