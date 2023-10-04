@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=16;$(echo $WATER | tr 'ewat' '1234')+$(echo $STIR | tr 'tir.' '3210')" | bc | xargs printf "%x" | tr '0-9a-f' 'bestcholhij'
+echo $((0x$(echo $WATER | tr 'ewat' '1234') + 0x$(echo $STIR | tr 'tir.' '3210'))) | tr '0-9a-f' 'bestcholhij'
