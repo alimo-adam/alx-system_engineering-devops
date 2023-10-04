@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Assuming that WATER and STIR are defined in bases 2-36
-WATER_DEC=$(echo $((2#$WATER)))
-STIR_DEC=$(echo $((2#$STIR)))
-
-SUM=$((WATER_DEC + STIR_DEC))
-
-# If we assume 'bestchol' to be base 36 for simplicity
-printf "%x\n" "$SUM"
-
+echo $((0x$(echo $WATER | tr 'ewat' '1234') + 0x$(echo $STIR | tr 'tir.' '3210'))) | tr '0-9' 'bestcholh'
