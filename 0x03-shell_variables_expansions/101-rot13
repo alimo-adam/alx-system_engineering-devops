@@ -1,7 +1,4 @@
 #!/bin/bash
-
-# Read input and apply rot13 transformation
 while read line; do
     echo "$line" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 done
-
